@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var color=["Yellow","Orange","Black","White"];
+        // console.log(color);
+        // var input=prompt("Enter your favourite color");
+        // colors.unshift(colorToAddAtStart);
+
+
+        // Initialize an array with color names
+var colors = ["Red", "Green", "Blue", "Yellow", "Orange"];
+
+// Display the array elements
+console.log("Initial array:", colors);
+
+// A. Add a color to the beginning of the array
+var colorToAddAtStart = prompt("A. Enter a color to add to the beginning:");
+colors.unshift(colorToAddAtStart);
+
+// Display the updated array
+console.log("Updated array (A):", colors);
+
+// B. Add a color to the end of the array
+var colorToAddAtEnd = prompt("B. Enter a color to add to the end:");
+colors.push(colorToAddAtEnd);
+
+// Display the updated array
+console.log("Updated array (B):", colors);
+
+// C. Add two more colors to the beginning of the array
+colors.unshift("Purple", "Pink");
+
+// Display the updated array
+console.log("Updated array (C):", colors);
+
+// D. Delete the first color in the array
+colors.shift();
+
+// Display the updated array
+console.log("Updated array (D):", colors);
+
+// E. Delete the last color in the array
+colors.pop();
+
+// Display the updated array
+console.log("Updated array (E):", colors);
+
+// F. Add a color at a specific index
+var indexToAdd = parseInt(prompt("F. Enter the index to add a color:"));
+var colorToAdd = prompt("F. Enter the color to add:");
+colors.splice(indexToAdd, 0, colorToAdd);
+
+// Display the updated array
+console.log("Updated array (F):", colors);
+
+// G. Delete colors at a specific index
+var indexToDelete = parseInt(prompt("G. Enter the index to delete colors from:"));
+var numColorsToDelete = parseInt(prompt("G. Enter the number of colors to delete:"));
+colors.splice(indexToDelete, numColorsToDelete);
+
+// Display the updated array
+console.log("Updated array (G):", colors);
+
+    </script>
+</body>
+</html>
